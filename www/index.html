@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, height=device-height, width=device-width, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="css/mfsm.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/vars_en.js"></script>
+    <script src="js/mfsm.js"></script>	
+    <style>
+        .activity   { height: 93vh; width: auto; }
+		.mainPage   { height: 94vh; width: auto; }
+        .pageFooter { min-height: 6vh; }
+        #home         { background: url(img/background_home.jpg);     }
+        #aboutMain    { background: url(img/background_about.jpg);    }
+        #toursMain    { background: url(img/background_tours.jpg);    }
+        #exhibitsMain { background: url(img/background_exhibits.jpg); }
+        #mapsMain     { background: url(img/background_maps.jpg);     }
+        #home, #aboutMain, #toursMain, #exhibitsMain, #mapsMain {
+            background-repeat:   no-repeat;
+            background-position: center center;
+            background-size:     100vw 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- SECTION 0: HOME -->
+    <div id="home" data-role="page" >
+        <div id="homeMain"  style="height: 100vh; width: auto;" data-role="main">
+            <img src="img/logo_stacked_white.png" class="museumLogo"/>
+            <a href="#about" class="btn-green" data-role="button" data-transition="slide">
+                <div id="aboutBTN" class="font-btn"></div>
+                <img src="img/icons/icon_white_about.png" class="btn-icon"/>
+            </a>
+            <a href="#tours" class="btn-green" data-role="button" data-transition="slide">
+                <div id="toursBTN" class="font-btn"></div>
+                <img src="img/icons/icon_white_filled_tours.png" class="btn-icon"/>
+            </a>
+            <a href="http://marshallfredericks.org/support" class="btn-green" data-role="button" data-transition="slide">
+                <div id="supportBTN" class="font-btn"></div>
+                <img src="img/icons/icon_white_filled_support.png" class="btn-icon"/>
+            </a>
+            <a href="#social" class="btn-green" data-role="button" data-transition="slide">
+                <div id="socialBTN" class="font-btn"></div>
+                <img src="img/icons/icon_white_social.png" class="btn-icon"/>
+            </a>
+        </div>
+    </div>
+    <!-- SECTION 1: ABOUT -->
+    <div id="about" class="activity" data-role="page">
+        <div id="aboutMain" class="mainPage" data-role="main">
+            <img src="img/logo_stacked_white.png" class="museumLogo"/>
+            <a href="#mission" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="missionBTN" class="font-btn"></div>
+            </a>
+            <a href="#biography" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="biographyBTN" class="font-btn"></div>
+            </a>
+            <a href="#history" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="historyBTN" class="font-btn"></div>
+            </a>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vh" height="40vh"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vh" height="40vh"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vh" height="40vh"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vh" height="40vh"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vh" height="40vh"/></a>
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </div>
+    <!-- SECTION 1.1: MISSION -->
+    <div id="mission" class= "activity" data-role="page">
+        <div id="missionMain" class="mainPage" data-role="main">
+            <table class="header-table" background="img/header_mission.jpg">
+                <tr><td valign="bottom">
+                    <p id="mission_text" class="font-heading-medium page-padding" style="color:#ffffff;"></p>
+                </td></tr>
+            </table>
+            <i><p id="mission_statement" class="font-body-large page-padding" style="color:#008080; margin-top:2vw;"></p></i>
+            <p id="mission_body" class="font-body-medium page-padding" style="font-weight:bold !important; margin-top:5vw;"></p>
+            <ul class="font-body-medium page-padding">
+                <li id="mission_bp1"></li>
+                <li id="mission_bp2"></li>
+                <li id="mission_bp3"></li>
+                <li id="mission_bp4"></li>
+                <li id="mission_bp5"></li>
+                <li id="mission_bp6"></li>
+                <li id="mission_bp7"></li>
+            </ul>
+            <br /><br /><br /><br />
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </div>
+    <!-- SECTION 1.2: BIOGRAPHY -->
+    <div id="biography" data-role="page">
+        <div id="biographyMain" data-role="main">
+            <table class="header-biography" background="img/header_biography.jpg" style="width:100vw;">
+                <tr><td valign="bottom">
+                    <p id="biography_header" class="font-heading-medium"></p>
+                </td></tr>
+            </table>
+            <br />
+            <span id="biography_text" class="font-body-large" style="font-size: 4.5vw; color:#ffffff;"></span>
+            <img src="img/icons/icon_tan_bio.png" width="40vw" height="40vw" align="top"/>
+            <div style="margin-left:3vw; margin-right:3vw; margin-top:1vw">
+                <i><span id="biography_name" class="font-medium-inline" style="color:#63875D;"></span></i>
+                <span id="biography_body" class="font-medium-inline" style="color:#ffffff;"></span>
+            </div>
+            <br />
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 1.3: HISTORY -->
+    <div id="history" data-role="page">
+        <div id="historyMain" data-role="main">
+            <table class="header-history" background="img/header_history.jpg">
+                <tr><td valign="bottom" style="width:100vw !important;">
+                    <div class="font-heading-medium">
+                    <span id="history_header_1" style="color: #ffffff; margin-right:0% !important;"></span>
+                    </div>
+                </td></tr>
+            </table>
+            <p id="history_body" class="font-body-medium" style="margin-top:4vw;"></p>
+        </div>
+        <br />
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2: TOURS -->
+    <div id="tours" class="activity" data-role="page">
+        <div id="toursMain" class="mainPage" data-role="main">
+            <div>
+                <span id="tours_text" class="font-heading-large" style="color:#ffffff;"></span>
+                <img src="img/icons/icon_white_filled_tours.png" height="15%" width="15%" style="margin-top:3vh;" />
+                <div style="margin-left:5vw;">
+                    <p id="museumHours_text" class="font-body-large" style="color:#ffffff;"></p>
+                    <p id="museumHours" class="font-body-medium" style="color:#ffffff;"></p><br />
+                    <i><p id="admission" class="font-body-medium" style="color:#ffffff;"></p></i>
+                </div>
+            </div>
+            <div style="margin-top:10vh;">
+                <a href="#exhibits" class="btn-green" data-role="button" data-transition="slide">
+                    <div id="exhibitsBTN" class="font-btn"></div>
+                    <img src="img/icons/icon_white_exhibitions.png" class="btn-icon"/>
+                </a>
+                <a href="#maps" class="btn-green" data-role="button" data-transition="slide">
+                    <div id="mapsBTN" class="font-btn"></div>
+                    <img src="img/icons/icon_white_filled_map.png" class="btn-icon"/>
+                </a>
+            </div>
+            <div>
+                <img src="img/logo_horizontal_white.png" class="museumLogo-small" />
+            </div>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>        
+    <!-- SECTION 2.1: EXHIBITS -->
+    <div id="exhibits" class="activity" data-role="page">
+        <div id="exhibitsMain" class="mainPage" data-role="main">
+            <img src="img/logo_stacked_white.png" class="museumLogo"/>
+            <a href="#main_exhibit" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="mainExhibitBTN" class="font-btn-small"></div>
+            </a>
+            <a href="http://marshallfredericks.org/exhibitions/current/" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="temporaryExhibitBTN" class="font-btn-small"></div>
+            </a>            
+            <a href="#sculptors_studio" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="scultorsStudioBTN" class="font-btn-small"></div>
+            </a>           
+            <a href="#sculpture_garden" class="btn-jade" data-role="button" data-transition="slide">
+                <div id="sculptureGardenBTN" class="font-btn-small"></div>
+            </a>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1: MAIN EXHIBIT -->
+    <div id="main_exhibit" data-role="page">
+        <div id="mainExhibitMain" data-role="main">
+            <table class="header-table" background="img/header_main_exhibit.jpg">
+                <tr><td valign="bottom" width="70vw">
+                    <div style="margin-left: 3vw; margin-right: 3vw;">
+                        <span id="mainExhibit_header_1" class="font-heading-medium" style="color: #ffffff; margin-right: 0vw !important;"></span>
+                        <i><span id="mainExhibit_header_2" class="font-heading-medium" style="color: #ffffff; margin-left: 0.5vw !important;"></span></i>
+                    </div>
+                </td><td valign="top" width="30vw">
+                    <div style="margin-right: 3vw; margin-top: 2vh;">
+                        <a href="#map_me_horizontal">
+                            <img src="img/icons/icon_white_filled_map.png" height="40vw" width="40vw" align="right"/>
+                        </a>
+                    </div>
+                </td></tr>
+            </table>
+            <p id="mainExhibit_body" class="font-body-medium" style="margin-top:3%; margin-left: 6%; margin-right: 6%"></p>
+            <p id="mainExhibit_gallery" class="font-body-large" style="color: #2F786C; margin-top: 10%; margin-bottom: 2%; margin-left: 6%; font-weight: 600 !important;"></p>
+            <table width="94%" style="margin-left: 3%; margin-right: 3%;">
+                <tr>
+                    <td onClick="document.location.href='#me_1'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_1.jpg">
+                        <p align="right" class="thumbnail-text-me">1</p>
+                    </td><td onClick="document.location.href='#me_2'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_2.jpg">
+                        <p align="right" class="thumbnail-text-me">2</p>
+                    </td><td onClick="document.location.href='#me_3'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_3.jpg">
+                        <p align="right" class="thumbnail-text-me">3</p>
+                    </td><td onClick="document.location.href='#me_4'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_4.jpg">
+                        <p align="right" class="thumbnail-text-me">4</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#me_5'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_5.jpg">
+                        <p align="right" class="thumbnail-text-me">5</p>
+                    </td><td onClick="document.location.href='#me_6'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_6.jpg">
+                        <p align="right" class="thumbnail-text-me">6</p>
+                    </td><td onClick="document.location.href='#me_7'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_7.jpg">
+                        <p align="right" class="thumbnail-text-me">7</p>
+                    </td><td onClick="document.location.href='#me_8'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_8.jpg">
+                        <p align="right" class="thumbnail-text-me">8</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#me_9'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_9.jpg">
+                        <p align="right" class="thumbnail-text-me">9</p>
+                    </td><td onClick="document.location.href='#me_10'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_10.jpg">
+                        <p align="right" class="thumbnail-text-me">10</p>
+                    </td><td onClick="document.location.href='#me_11'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_11.jpg">
+                        <p align="right" class="thumbnail-text-me">11</p>
+                    </td><td onClick="document.location.href='#me_12'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_12.jpg">
+                        <p align="right" class="thumbnail-text-me">12</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#me_13'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_13.jpg">
+                        <p align="right" class="thumbnail-text-me">13</p>
+                    </td><td onClick="document.location.href='#me_14'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_14.jpg">
+                        <p align="right" class="thumbnail-text-me">14</p>
+                    </td><td onClick="document.location.href='#me_15'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_15.jpg">
+                        <p align="right" class="thumbnail-text-me">15</p>
+                    </td><td onClick="document.location.href='#me_16'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_16.jpg">
+                        <p align="right" class="thumbnail-text-me">16</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#me_17'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_17.jpg">
+                        <p align="right" class="thumbnail-text-me">17</p>
+                    </td><td onClick="document.location.href='#me_18'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_18.jpg">
+                        <p align="right" class="thumbnail-text-me">18</p>
+                    </td><td onClick="document.location.href='#me_19'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_19.jpg">
+                        <p align="right" class="thumbnail-text-me">19</p>
+                    </td><td onClick="document.location.href='#me_20'" class="thumbnail-image"
+                        valign="bottom" background="img/mainExhibit/thumbnail_me_20.jpg">
+                        <p align="right" class="thumbnail-text-me">20</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.01: MAIN EXHIBIT 01 -->
+    <div id="me_1" data-role="page">
+        <div id="me_1_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_1.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_1_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_1_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_1')"/>
+            <p id="me_1_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_1_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.02: MAIN EXHIBIT 02 -->
+    <div id="me_2" data-role="page">
+        <div id="me_2_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_2.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_2_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_2_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_2')"/>
+            <p id="me_2_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_2_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.03: MAIN EXHIBIT 03 -->
+    <div id="me_3" data-role="page">
+        <div id="me_3_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_3.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_3_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_3_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_3')"/>
+            <p id="me_3_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_3_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.04: MAIN EXHIBIT 04 -->
+    <div id="me_4" data-role="page">
+        <div id="me_4_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_4.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_4_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_4_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_4')"/>
+            <p id="me_4_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_4_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.05: MAIN EXHIBIT 05 -->
+    <div id="me_5" data-role="page">
+        <div id="me_5_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_5.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_5_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_5_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_5')"/>
+            <p id="me_5_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_5_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.06: MAIN EXHIBIT 06 -->
+    <div id="me_6" data-role="page">
+        <div id="me_6_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_6.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_6_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_6_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_6')"/>
+            <p id="me_6_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_6_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.07: MAIN EXHIBIT 07 -->
+    <div id="me_7" data-role="page">
+        <div id="me_7_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_7.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_7_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_7_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_7')"/>
+            <p id="me_7_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_7_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.08: MAIN EXHIBIT 08 -->
+    <div id="me_8" data-role="page">
+        <div id="me_8_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_8.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_8_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_8_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_8')"/>
+            <p id="me_8_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_8_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.09: MAIN EXHIBIT 09 -->
+    <div id="me_9" data-role="page">
+        <div id="me_9_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_9.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_9_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_9_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_9')"/>
+            <p id="me_9_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_9_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.10: MAIN EXHIBIT 10 -->
+    <div id="me_10" data-role="page">
+        <div id="me_10_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_10.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_10_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_10_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_10')"/>
+            <p id="me_10_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_10_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.11: MAIN EXHIBIT 11 -->
+    <div id="me_11" data-role="page">
+        <div id="me_11_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_11.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_11_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_11_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_11')"/>
+            <p id="me_11_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_11_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.12: MAIN EXHIBIT 12 -->
+    <div id="me_12" data-role="page">
+        <div id="me_12_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_12.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_12_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_12_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_12')"/>
+            <p id="me_12_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_12_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.13: MAIN EXHIBIT 13 -->
+    <div id="me_13" data-role="page">
+        <div id="me_13_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_13.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_13_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_13_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_13')"/>
+            <p id="me_13_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_13_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.14: MAIN EXHIBIT 14 -->
+    <div id="me_14" data-role="page">
+        <div id="me_14_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_14.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_14_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_14_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_14')"/>
+            <p id="me_14_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_14_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.15: MAIN EXHIBIT 15 -->
+    <div id="me_15" data-role="page">
+        <div id="me_15_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_15.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_15_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_15_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_15')"/>
+            <p id="me_15_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_15_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.16: MAIN EXHIBIT 16 -->
+    <div id="me_16" data-role="page">
+        <div id="me_16_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_16.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_16_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_16_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_16')"/>
+            <p id="me_16_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_16_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.17: MAIN EXHIBIT 17 -->
+    <div id="me_17" data-role="page">
+        <div id="me_17_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_17.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_17_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_17_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_17')"/>
+            <p id="me_17_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_17_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.18: MAIN EXHIBIT 18 -->
+    <div id="me_18" data-role="page">
+        <div id="me_18_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_18.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_18_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_18_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_18')"/>
+            <p id="me_18_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_18_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.19: MAIN EXHIBIT 19 -->
+    <div id="me_19" data-role="page">
+        <div id="me_19_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_19.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_19_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_19_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_19')"/>
+            <p id="me_19_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_19_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.1.20: MAIN EXHIBIT 20 -->
+    <div id="me_20" data-role="page">
+        <div id="me_20_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/mainExhibit/mainExhibit_20.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#main_exhibit">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_me_horizontal">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="me_20_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="me_20_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('me_20')"/>
+            <p id="me_20_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="me_20_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <!-- SECTION 2.1.2: TEMPORARY EXHIBIT -->
+    <!-- links to an external site -->
+    <!-- SECTION 2.1.3: SCULPTORS STUDIO -->
+    <div id="sculptors_studio" data-role="page">
+        <div id="sculptorsStudioMain" data-role="main">
+            <table class="header-table" background="img/header_sculptors_studio.jpg">
+                <tr><td valign="bottom">
+                    <span id="ss_header" class="font-heading-medium page-padding" style="color:#ffffff;"></span>
+                </td></tr>
+            </table>
+            <p id="ss_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p>
+            <br /><img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('ss_welcome')"/>
+            <p id="ss_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <a href="#sculptors_studio_pantograph" class="btn-green" style="width: 75vw !important;" data-role="button" data-transition="slide">
+                <div id="pantographBTN" class="font-btn"></div>
+            </a>
+            <a href="https://www.youtube.com/embed/JGXVVI6RehI?enablejsapi=1&version=3&playerapiid=ytplayer"" class="btn-green" style="width: 75vw !important;" data-role="button" data-transition="slide">
+            <!--<iframe id="popup-youtube-player" src="https://www.youtube.com/embed/JGXVVI6RehI?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>-->
+                <div id="byronBTN" class="font-btn"></div>
+            </a>
+            <br />
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.3.1: SCULPTORS STUDIO - Pantograph -->
+    <div id="sculptors_studio_pantograph" data-role="page">
+        <div id="sculptorsStudioMain_pantograph" data-role="main">
+            <table class="header-table" background="img/header_sculptors_studio.jpg">
+                <tr><td valign="bottom">
+                    <span id="ss_pantograph_header" class="font-heading-medium page-padding" style="color:#ffffff;"></span>
+                </td></tr>
+            </table>
+            <br /><img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('ss_pantography')"/>
+            <p id="ss_pantograph_body" class="font-body-medium" style="margin-top: 3%;"></p>
+        </div>
+        <br />
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.3.1: SCULPTORS STUDIO - Lord Byron -->
+    <div id="sculptors_studio_lordByron" data-role="page">
+        <div id="sculptorsStudioMain_byron" data-role="main">
+            <iframe id="popup-youtube-player" src="https://www.youtube.com/embed/JGXVVI6RehI?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4: SCULPTURE GARDEN -->
+    <div id="sculpture_garden" data-role="page">
+        <div id="sculptureGardenMain" data-role="main">
+            <img src="img/icons/icon_white_filled_map.png" width="10%" height="4%" style="position: absolute; margin-left: 3%; margin-top: 3%;"/>
+            <img src="img/header_sculpture_garden.jpg" style="width: 100vw; height: auto;">
+            <div style="color: #2F786C; margin-top: 2%; margin-left: 4%; margin-bottom: 2%; font-weight: 600 !important;">
+                <span id="sculpture_garden_header_1" class="font-heading-medium" style="font-weight: 600 !important;"></span>
+                <p id="sculpture_garden_gallery" class="font-body-large" style="font-weight: 600 !important;"></p>
+            </div>
+            <table width="94%" style="margin-left: 3%; margin-right: 3%;">
+                <tr>
+                    <td onClick="document.location.href='#sg_1'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_1.png">
+                        <p align="right" class="thumbnail-text-sg">1</p>
+                    </td><td onClick="document.location.href='#sg_2'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_2.png">
+                        <p align="right" class="thumbnail-text-sg">2</p>
+                    </td><td onClick="document.location.href='#sg_3'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_3.png">
+                        <p align="right" class="thumbnail-text-sg">3</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#sg_4'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_4.png">
+                        <p align="right" class="thumbnail-text-sg">4</p>
+                    </td><td onClick="document.location.href='#sg_5'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_5.png">
+                        <p align="right" class="thumbnail-text-sg">5</p>
+                    </td><td onClick="document.location.href='#sg_6'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_6.png">
+                        <p align="right" class="thumbnail-text-sg">6</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#sg_7'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_7.png">
+                        <p align="right" class="thumbnail-text-sg">7</p>
+                    </td><td onClick="document.location.href='#sg_8'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_8.png">
+                        <p align="right" class="thumbnail-text-sg">8</p>
+                    </td><td onClick="document.location.href='#sg_9'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_9.png">
+                        <p align="right" class="thumbnail-text-sg">9</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#sg_10'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_10.png">
+                        <p align="right" class="thumbnail-text-sg">10</p>
+                    </td><td onClick="document.location.href='#sg_11'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_11.png">
+                        <p align="right" class="thumbnail-text-sg">11</p>
+                    </td><td onClick="document.location.href='#sg_12'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_12.png">
+                        <p align="right" class="thumbnail-text-sg">12</p>
+                    </td>
+                </tr><tr>
+                    <td onClick="document.location.href='#sg_13'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_13.png">
+                        <p align="right" class="thumbnail-text-sg">13</p>
+                    </td><td onClick="document.location.href='#sg_14'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_14.png">
+                        <p align="right" class="thumbnail-text-sg">14</p>
+                    </td><td onClick="document.location.href='#sg_15'" class="thumbnail-image"
+                        valign="bottom" background="img/sculptureGarden/thumbnail_sg_15.png">
+                        <p align="right" class="thumbnail-text-sg">15</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.01: SCULPTURE GARDEN 01 -->
+    <div id="sg_1" data-role="page">
+        <div id="sg_1_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_1.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_1_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_1_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_1')"/>
+            <p id="sg_1_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_1_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.02: SCULPTURE GARDEN 02 -->
+    <div id="sg_2" data-role="page">
+        <div id="sg_2_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_2.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_2_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_2_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_2')"/>
+            <p id="sg_2_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_2_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.03: SCULPTURE GARDEN 03 -->
+    <div id="sg_3" data-role="page">
+        <div id="sg_1_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_3.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_3_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_3_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_3')"/>
+            <p id="sg_3_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_3_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.04: SCULPTURE GARDEN 04 -->
+    <div id="sg_4" data-role="page">
+        <div id="sg_4_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_4.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_4_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_4_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_4')"/>
+            <p id="sg_4_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_4_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.05: SCULPTURE GARDEN 05 -->
+    <div id="sg_5" data-role="page">
+        <div id="sg_5_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_5.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_5_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_5_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_5')"/>
+            <p id="sg_5_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_5_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.06: SCULPTURE GARDEN 06 -->
+    <div id="sg_6" data-role="page">
+        <div id="sg_6_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_6.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_6_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_6_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_6')"/>
+            <p id="sg_6_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_6_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.07: SCULPTURE GARDEN 07 -->
+    <div id="sg_7" data-role="page">
+        <div id="sg_7_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_7.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_7_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_7_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_7')"/>
+            <p id="sg_7_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_7_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.08: SCULPTURE GARDEN 08 -->
+    <div id="sg_8" data-role="page">
+        <div id="sg_8_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_8.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_8_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_8_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_8')"/>
+            <p id="sg_8_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_8_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.09: SCULPTURE GARDEN 09 -->
+    <div id="sg_9" data-role="page">
+        <div id="sg_9_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_9.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_9_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_9_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_9')"/>
+            <p id="sg_9_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_9_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.10: SCULPTURE GARDEN 10 -->
+    <div id="sg_10" data-role="page">
+        <div id="sg_10_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_10.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_10_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_10_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_10')"/>
+            <p id="sg_10_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_10_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.11: SCULPTURE GARDEN 11 -->
+    <div id="sg_11" data-role="page">
+        <div id="sg_11_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_11.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_11_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_11_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_11')"/>
+            <p id="sg_11_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_11_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.12: SCULPTURE GARDEN 12 -->
+    <div id="sg_12" data-role="page">
+        <div id="sg_12_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_12.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_12_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_12_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_12')"/>
+            <p id="sg_12_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_12_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.13: SCULPTURE GARDEN 13 -->
+    <div id="sg_13" data-role="page">
+        <div id="sg_13_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_13.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_13_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_13_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_13')"/>
+            <p id="sg_13_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_13_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.14: SCULPTURE GARDEN 14 -->
+    <div id="sg_14" data-role="page">
+        <div id="sg_1_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_14.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_14_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_14_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_14')"/>
+            <p id="sg_14_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_14_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.1.4.15: SCULPTURE GARDEN 15 -->
+    <div id="sg_15" data-role="page">
+        <div id="sg_15_Main" data-role="main">
+            <table class="header-table-exhibit" background="img/sculptureGarden/sculptureGarden_15.jpg">
+                <tr><td valign="top" width="50%">
+                    <a href="#sculpture_garden">
+                        <img src="img/icons/icon_white_circle_close.png" class="header-button-left" align="left"/>
+                    </a>
+                </td><td valign="top" width="50%">
+                    <a href="#map_outdoor">
+                        <img src="img/icons/icon_white_unfilled_map.png" class="header-button-right" align="right"/>
+                    </a>
+                </td></tr>
+            </table>
+            <b><p id="sg_15_title" class="font-heading-small" style="color:#008080; margin-top: 3%; font-weight: bold;"></p></b>
+            <i><p id="sg_15_info" class="font-body-large" style="margin-bottom: 2%; font-weight: light;"></p></i>
+            <img src="img/icons/icon_black_audio.png" class="btn-audio" onclick="playAudio('sg_15')"/>
+            <p id="sg_15_body" class="font-body-medium" style="margin-top: 3%;"></p>
+            <p id="sg_15_annot" class="font-body-small" style="margin-top: 6%;"></p>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.2: KIDS -->
+    <!-- unimplemented --> 
+    <!-- SECTION 2.3: MAPS -->
+    <div id="maps" class="activity" data-role="page">        
+        <div id="mapsMain" class="mainPage" data-role="main">
+            <div style="margin-left:5%;">
+                <span id="maps_text" class="font-heading-large" style="color: #2F786C"></span>
+                <img src="img/icons/icon_white_filled_map.png" height="15%" width="15%"/>
+            </div>
+            <div style="margin-top:15vh;">
+                <a href="#map_indoor" class="btn-jade" data-role="button" data-transition="slide">
+                    <div id="indoorMapBTN" class="font-btn"></div>
+                </a>
+                <a href="#map_outdoor" class="btn-jade" data-role="button" data-transition="slide">
+                    <div id="outdoorMapBTN" class="font-btn"></div>
+                </a>
+            </div>
+            <div>
+                <img src="img/logo_horizontal_white.png" class="museumLogo-small"/>
+            </div>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.3.1: MAP - INDOOR -->
+    <div id="map_indoor" data-role="page">
+        <div id="mapIndoorMain" data-role="main">
+            <table class="header-map" background="img/map_indoor.jpg" width="100%">
+                <tr><td valign="top">
+                    <div style="margin-left:40%;">
+                        <a href="#map_me_horizontal">
+                            <img src="img/icons/icon_white_zoom_in.png" height="25%" width="25%"/>
+                        </a>
+                    </div>
+                </td><td valign="top">
+                    <div style="margin-right:10%; margin-top: 10%;">
+                        <a href="#" data-rel="back">
+                            <img src="img/icons/icon_black_close.png" height="10%" width="10%" align="right"/>
+                        </a>
+                    </div>
+                </td></tr>
+            </table>            
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.3.2: MAP - OUTDOOR -->
+    <div id="map_outdoor" data-role="page">
+        <div id="mapOutdoorMain" data-role="main">
+            <table class="header-map" background="img/map_outdoor.jpg" width="100%">
+                <tr><td valign="top">
+                    <div style="margin-right: 3%; margin-top: 4%;">
+                        <a href="#" data-rel="back">
+                            <img src="img/icons/icon_black_close.png" height="5%" width="5%" align="right"/>
+                        </a>
+                    </div>
+                </td></tr>
+            </table>
+        </div>        
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.3.3: MAP - MAIN EXHIBIT VERTICAL -->
+    <div id="map_me_vertical" data-role="page">
+        <div id="mapMEVerticalHeader" data-role="main">
+            <table class="header-map" background="img/map_me_vertical.jpg" width="100%">
+                <tr><td valign="bottom">
+                    <div>
+                        <a href="#map_me_horizontal">
+                            <img src="img/icons/icon_black_zoom_out.png" height="7%" width="7%" align="bottom" style="margin-bottom:5%; margin-left:10%"/>
+                        </a><a href="#" data-rel="back">
+                            <img src="img/icons/icon_black_close.png" height="6%" width="6%" align="bottom" style="margin-bottom:5%; margin-left:5%;"/>
+                        </a>
+                    </div>
+                </td></tr>
+            </table>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 2.3.4: MAP - MAIN EXHIBIT HORIZONTAL -->
+    <div id="map_me_horizontal" data-role="page">
+        <div id="map_me_horizontalHeader" data-role="main">
+            <table class="header-map" background="img/map_me_horizontal.jpg" width="100%">
+                <tr><td valign="top">
+                    <div>
+                        <a href="#" data-rel="back">
+                            <img src="img/icons/icon_black_close.png" height="5%" width="5%" align="left" style="margin-top: 37%; margin-left:4%;" />
+                        </a>
+                        <a href="#map_me_vertical">
+                            <img src="img/icons/icon_black_zoom_in.png" height="7%" width="7%" align="right" style="margin-top: 37%; margin-right:5%" />
+                        </a>
+                    </div>
+                </td></tr>
+            </table>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 3: SUPPORT -->
+    <!-- redirects to another website -->
+    <!-- SECTION 4: SOCIAL -->
+    <div  id="social" data-role="page">
+        <div id="socialMain" data-role="main">
+            <div align="center" style="margin-left:10%; margin-right:10%; margin-top:4%; margin-bottom:2%;">
+                <p id="socialHeader" class="font-heading-small" style="color: #97CE8D"></p>
+                <p id="socialBody" class="font-body-medium" style="color: #ffffff"></p>
+            </div>
+            <a href="https://www.facebook.com/marshallfredericksmuseum">
+                <img src="img/socialMedia/SocialMediaCircles-facebook.png" height="30%" width="30%" align="left" style="margin-left:17%; margin-top:3%;" />
+            </a><a href="https://twitter.com/mfsm">
+                <img src="img/socialMedia/SocialMediaCircles-twitter.png" height="30%" width="30%" align="right" style="margin-right:17%; margin-top:3%;"/>
+            </a><a href="https://www.youtube.com/playlist?list=PLFF7F77BE786719E2">
+                <img src="img/socialMedia/SocialMediaCircles-youtube.png" height="30%" width="30%" align="left" style="margin-left:17%; margin-top:3%;" />
+            </a><a href="https://www.flickr.com/photos/marshallfredericks">
+                <img src="img/socialMedia/SocialMediaCircles-flickr.png" height="30%" width="30%" align="right" style="margin-right:17%; margin-top:3%;"/>
+            </a><a href="http://instagram.com/mfsmuseum">
+                <img src="img/socialMedia/SocialMediaCircles-instagram.png" height="30%" width="30%" align="left" style="margin-left:17%; margin-top:3%;" />
+            </a><a href="https://www.tripadvisor.com/ShowUserReviews-g42665-d2549492-r313075001-Marshall_M_Fredericks_Sculpture_Museum-Saginaw_Michigan.html">
+                <img src="img/socialMedia/SocialMediaCircles-tripadvisor.png" height="30%" width="30%" align="right" style="margin-right:17%; margin-top:3%;"/>
+            </a><a href="https://foursquare.com/v/marshall-m-fredericks-sculpture-museum/4da4a72d0adcba7ac2f3084d">
+                <img src="img/socialMedia/SocialMediaCircles-foursquare.png" height="30%" width="30%" align="left" style="margin-left:17%; margin-top:3%;" />
+            </a><a href="http://marshallfredericks.org/">
+                <img src="img/socialMedia/SocialMediaCircles-mfsm.png" height="30%" width="30%" align="right" style="margin-right:17%; margin-top:3%;"/>
+            </a>
+        </div>
+        <div class="pageFooter" data-role="footer" data-id="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-navbar" data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="btn-olive" data-transition="slide" data-rel="back">
+                        <img src="img/icons/icon_white_back.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#home" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_home.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#tours" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_tours.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="#maps" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_map.png" width="40vw" height="40vw"/></a>
+                    </li><li>
+                        <a href="http://marshallfredericks.org/support" class="btn-olive" data-transition="slide">
+                        <img src="img/icons/icon_white_unfilled_support.png" width="40vw" height="40vw"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Run JS Functions -->
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        setText();
+        app.initialize();
+                
+        var audioFile = new Audio();
+        function playAudio(file) {
+            src = "audio/" + file + ".mp3";
+            if (audioFile.src == "") { 
+                audioFile.setAttribute('src', src);
+                audioFile.load();
+            }
+            if (audioFile.paused) { 
+                audioFile.play();
+                $('img.btn-audio').attr('src', 'img/icons/icon_black_pause.png');
+            } else { 
+                audioFile.pause();
+                $('img.btn-audio').attr('src', 'img/icons/icon_black_play.png');
+            }
+        }
+
+        $(document).on("pagechange", function () {
+            // $('#popup-youtube-player')[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');             
+            $('img.btn-audio').attr('src', 'img/icons/icon_black_audio.png');
+            audioFile.pause();
+            audioFile = new Audio();
+        });
+    </script>
+</body>
+</html>

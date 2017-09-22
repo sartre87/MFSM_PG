@@ -1,0 +1,154 @@
+p { 
+    margin: 0em;
+    text-shadow: 0px 0px;
+}
+span {
+    text-shadow: 0px 0px;
+}
+.btn-icon {
+    display: inline;
+    text-align: top;
+    width: 4.8vw;
+}
+.btn-jade {
+    background-color: rgba(47, 120, 108, 0.7) !important;
+    border-color: #2F786C !important;
+}
+.btn-olive {
+    background-color: #63875D !important;
+    border-color: #63875D !important;
+}
+.btn-green {
+    background-color: rgba(151, 206, 141, 0.7)!important;
+    border-color: #97CE8D !important;
+}
+.btn-jade, .btn-olive, .btn-green {
+    color: #ffffff !important;
+    border-style: solid !important;    
+}
+.btn-jade, .btn-green {
+    width: 50vw;
+    margin: auto;
+	margin-top: 5vw;
+}
+.btn-olive {
+    margin-top: 0vw;
+}
+.btn-audio {
+    margin-left: 3%;
+    height: 5%;
+    width:5%;
+}
+.font-btn {
+    font-size: 6vw;
+}
+.font-btn-small {
+    font-size: 5vw;    
+}
+.font-btn, .font-btn-small {
+    display: inline;
+    font-weight: lighter;
+}
+.font-heading-large {
+    font-size: 18vw;
+}
+.font-heading-medium {
+    font-size: 6vw;
+}
+.font-heading-small {
+    font-size: 5vw;    
+}
+.font-body-large {
+    font-size: 4vw;
+}
+.font-body-medium {
+    font-size: 3.2vw;
+}
+.font-body-small {
+    font-size: 2.8vw;
+}
+.font-medium-inline {
+    font-size: 3.2vw;
+    font-weight: lighter;
+    display:inline;
+}
+.font-heading-large, .font-heading-medium, .font-heading-small, .font-body-large , .font-body-medium, .font-body-small{
+    font-weight: lighter;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.header-table {
+    background-size: 100vw 35vh;
+    width: 100vw;
+    height: 35vh;
+}
+.header-table-exhibit {
+    background-size: auto 35vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #63875D !important;
+    width: 100vw;
+    height: 35vh;
+}
+.header-button-left {
+    margin-left: 3vw;    
+}
+.header-button-right {
+    margin-right: 3vw;    
+}
+.header-button-left, .header-button-right {
+    margin-top: 1.5vh;
+    height: 7vw;
+    width: 7vw;
+}
+.header-biography {
+    background-size: 100vw 55vh;
+    width: 100vw;
+    height: 55vh;
+}
+.header-history {
+    background-size: 100vw 40vh;
+    width: 100vw;
+    height: 40vh;
+}
+.header-map {
+    background-size: 100vw 92vh;
+    width: 100vw;
+    height: 92vh;
+}
+.museumLogo {
+	width: 50vw;
+    padding-top: 3vw;
+	padding-left: 25vw;
+}
+.museumLogo-small {
+	width: 80vw;
+    position: absolute;
+	padding-left:13vw;
+    bottom: 12vh;
+}
+.page-padding {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.thumbnail-image {
+    background-size: 100% 100%;
+}
+.thumbnail-text-me {
+    font-size: 5vw; 
+    color: #ffffff;
+    margin-top: 65%;
+    margin-right: 5%;
+}
+.thumbnail-text-sg {
+    font-size: 5vw;
+    color: #ffffff;
+    margin-top: 50%;
+    margin-right: 5%;
+}
+#biography.ui-page {
+    background-color:#2b2e31;
+}
+#social.ui-page {
+    background-color:#2b2e31;
+}
